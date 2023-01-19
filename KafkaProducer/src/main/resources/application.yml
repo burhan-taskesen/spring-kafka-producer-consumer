@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    bootstrap-servers: ${BROKER_URL}
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      key-serializer: org.springframework.kafka.support.serializer.JsonSerializer
