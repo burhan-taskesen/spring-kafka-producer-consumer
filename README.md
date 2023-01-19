@@ -25,7 +25,7 @@ Here is an example of sending a message to a topic:
 <pre>
 <code>
 @Autowired
-private KafkaTemplate&#60String String&#62 kafkaTemplate;
+private KafkaTemplate&#60String, String&#62 kafkaTemplate;
 
 public void sendMessage(String topic, String message) {
     kafkaTemplate.send(topic, message);
